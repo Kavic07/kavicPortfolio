@@ -1,0 +1,39 @@
+nav {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  padding-top: 7em;
+  text-align: center;
+}
+/* styling for the image */
+nav > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #2d60bd;
+  margin-bottom: 2em;
+}
+/* styling for the navbar-links */
+ul > li {
+  padding: 1em 1em;
+}
+ul > li.active {
+  color: #2d60bd;
+}
+ul > li > .navbar-icons {
+  padding-right: 0.5em;
+  color: whitesmoke;
+}
+ul > li > a {
+  text-decoration: none;
+  padding-left: 0.5em;
+  color: whitesmoke;
+  font-family: heebo;
+  font-size: 1.3em;
+}
+ul > li > a:hover {
+  color: #2d60bd;
+  font-weight: bold;
+  font-size: 1.5em;
+}

@@ -31,7 +31,7 @@
     color: #333;
   }
   50% {
-    color: #2d60bd;
+    color: #1974d3;
   }
 }
 
@@ -99,7 +99,7 @@ h2 span:nth-child(19) {
   height: 2em;
   padding: 1em;
   margin: 1em;
-  background-color: black;
+  background-color: #083463;
   color: whitesmoke;
   border-radius: 50%;
 }

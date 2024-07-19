@@ -1,0 +1,75 @@
+.about-container {
+  font-family: Heebo;
+  margin: 3em 0em 3em 2em;
+}
+.about-container h2 {
+  /* margin-top: 2em; */
+  color: #083463;
+  font-size: 2em;
+  transition: border-bottom 0.9s ease-in;
+}
+h2.underline {
+  border-bottom: 3px solid #1974d3;
+  display: inline-block;
+}
+/* About content styling starts here */
+.text-container {
+  display: flex;
+  align-items: center;
+  margin: 0em 6em 0em 6em;
+  gap: 3em;
+}
+.text-container h3 {
+  padding: 1em 0em 0.6em 0em;
+  font-size: 1.6em;
+  color: #083463;
+}
+.text-container img {
+  margin-top: 5em;
+  width: 200px;
+  height: 200px;
+  border-radius: 3em;
+}
+.text-container .subhead {
+  font-style: italic;
+  font-weight: 500;
+}
+.text-container .paragraph {
+  font-weight: 500;
+}
+/* skills styling starts here */
+.skills-container {
+  margin-left: 5em;
+  /* max-width: 200px; */
+}
+.skills-container h3 {
+  padding-top: 2em;
+  font-size: 1.6em;
+  color: #083463;
+}
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.skills-content p {
+  border: 1px solid #083463;
+  border-radius: 1em;
+  background-color: #083463;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 1em;
+}
+.skills-content p span {
+  padding-left: 0.2em;
+}
+.skills-content p:hover {
+  font-size: 20px;
+}

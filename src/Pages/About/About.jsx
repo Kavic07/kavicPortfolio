@@ -52,7 +52,7 @@ const About = () => {
               Welcome! This section offers insights into who I am, my
               professional pursuits, and my current expertise, primarily focused
               on programming and technology. Explore to learn more about my
-              journey, skills, and projects
+              journey, skills, and projects.
             </p>
 
             <p className="paragraph">

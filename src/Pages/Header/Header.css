@@ -13,6 +13,7 @@
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  margin-left: 25%;
 }
 .header-container h2 {
   font-family: heebo;
@@ -102,4 +103,21 @@ h2 span:nth-child(19) {
   background-color: #083463;
   color: whitesmoke;
   border-radius: 50%;
+}
+
+/* media query starts here */
+@media screen and (max-width: 768px) {
+  .header-container {
+    display: none;
+    /* margin-left: 17%;
+    height: 11em; */
+  }
+  /* .header-container h2 {
+    font-size: 1em;
+  }
+  .header-icons .media-icon {
+    width: 1em;
+    height: 1em;
+    padding: 0.5em;
+  }*/
 }

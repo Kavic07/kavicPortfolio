@@ -3,7 +3,7 @@ nav {
   width: 25%;
   height: 100%;
   background-color: #083463;
-  padding-top: 7em;
+  padding-top: 4.5em;
   text-align: center;
 }
 /* styling for the image */
@@ -17,6 +17,7 @@ nav > img {
 /* styling for the navbar-links */
 ul > li {
   padding: 1em 1em;
+  list-style-type: none;
 }
 ul > li.active {
   color: #1974d3;
@@ -36,4 +37,23 @@ ul > li > a:hover {
   color: #1974d3;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+/* media query starts here */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 18%;
+    padding-top: 3.3em;
+  }
+  ul li a {
+    font-size: 1em;
+  }
+  ul li a:hover {
+    font-size: 0.2em;
+  }
+  nav img {
+    width: 130px;
+    height: 130px;
+    margin-left: 1em;
+  }
 }

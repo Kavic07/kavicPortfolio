@@ -15,6 +15,7 @@ const Navbar = () => {
     <>
       <nav>
         <img src="/images/navpic.jpg" alt="profilepic" />
+
         <ul>
           <li>
             <FontAwesomeIcon icon={faHouse} className="navbar-icons" />

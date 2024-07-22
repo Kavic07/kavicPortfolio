@@ -1,6 +1,7 @@
 .about-container {
   font-family: Heebo;
-  margin: 3em 0em 3em 2em;
+  margin-left: 25%;
+  padding: 3em 0em 3em 2em;
 }
 /* h2 styling */
 .about-container h2 {
@@ -84,7 +85,7 @@ h2.underline::after {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 65%;
+  width: 75%;
 }
 .skills-content p {
   border: 1px solid #083463;
@@ -101,4 +102,21 @@ h2.underline::after {
 }
 .skills-content p:hover {
   font-size: 20px;
+}
+
+/* media query starts here */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding-left: 1em;
+  }
+  .text-container {
+    display: block;
+    margin: 0em 1em 0em 0em;
+  }
+  .text-content p {
+    padding-right: 1em;
+  }
+  .skills-container {
+    margin-left: 1em;
+  }
 }

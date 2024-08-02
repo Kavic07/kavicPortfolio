@@ -46,14 +46,14 @@ ul > li > a:hover {
     padding-top: 3.3em;
   }
   ul li a {
-    font-size: 1em;
+    font-size: 0.7em;
   }
   ul li a:hover {
     font-size: 0.2em;
   }
   nav img {
-    width: 130px;
-    height: 130px;
-    margin-left: 1em;
+    width: 100px;
+    height: 100px;
+    margin-left: 0.7em;
   }
 }

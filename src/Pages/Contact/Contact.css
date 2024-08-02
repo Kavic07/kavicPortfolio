@@ -1,0 +1,128 @@
+.contact-container {
+  margin-left: 25%;
+  font-family: Heebo;
+  background-color: #c0dbf7;
+  padding: 3em 2em 3em 2em;
+}
+/* h2 styling starts here */
+.contact-container h2 {
+  color: #083463;
+  font-size: 2em;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  opacity: 0;
+  transition: width 2s, opacity 2s;
+}
+h2.underline {
+  border-bottom: 3px solid #1974d3;
+  display: inline-block;
+  width: auto;
+  opacity: 1;
+}
+h2.underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: width 2s;
+}
+h2.underline::after {
+  width: 100%;
+}
+/* h2 styling ends here */
+
+.contact-wrapper {
+  display: flex;
+  gap: 5em;
+  margin: 2em 0em 0em 2em;
+}
+
+/* form styling starts here */
+label {
+  color: #083463;
+}
+form .form-name {
+  display: flex;
+  gap: 1em;
+}
+.form-name .form-f {
+  width: 16.9em;
+  padding-bottom: 1em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #1974d3;
+}
+.form-group {
+  padding-bottom: 1em;
+}
+.form-control {
+  width: 35em;
+  padding-bottom: 1em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #1974d3;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+button {
+  padding: 1em 2em;
+  background-color: #083463;
+  color: whitesmoke;
+  border: 1px solid #083463;
+  border-radius: 2em;
+}
+button:hover {
+  cursor: pointer;
+}
+/* form styling ends here */
+
+/* contact-info styling starts here */
+.contact-info h3 {
+  color: #083463;
+  font-size: 1.5em;
+  padding-bottom: 1.5em;
+}
+.contact-info p {
+  padding-bottom: 1em;
+}
+.contact-icons {
+  color: #083463;
+  padding-right: 1em;
+}
+.contact-info p span {
+  color: #1974d3;
+}
+
+/* media query starts here */
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .contact-container h2 {
+    margin-left: 0.3em;
+  }
+  form .form-name {
+    display: block;
+  }
+  .form-control {
+    width: 17em;
+  }
+}
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    margin-left: 17%;
+  }
+  .contact-wrapper {
+    display: block;
+  }
+  .contact-info {
+    padding-top: 2em;
+  }
+}

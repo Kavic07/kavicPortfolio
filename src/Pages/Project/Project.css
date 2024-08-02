@@ -55,7 +55,7 @@ h2.underline::after {
 }
 /* image styling */
 .project-images {
-  background-color: #80b7f1;
+  background-color: #083463;
   border-radius: 2em;
   height: 450px;
   display: flex;
@@ -84,5 +84,6 @@ h2.underline::after {
 @media screen and (max-width: 768px) {
   .project-container {
     margin-left: 17%;
+    padding-left: 1em;
   }
 }

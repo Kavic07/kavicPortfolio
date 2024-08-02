@@ -1,0 +1,68 @@
+.service-container {
+  margin-left: 25%;
+  font-family: Heebo;
+  padding: 3em 2em 1.5em 2em;
+}
+.service-container > h2 {
+  color: #083463;
+  font-size: 2em;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  opacity: 0;
+  transition: width 2s, opacity 2s;
+}
+h2.underline {
+  border-bottom: 3px solid #1974d3;
+  display: inline-block;
+  width: auto;
+  opacity: 1;
+}
+h2.underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: width 2s;
+}
+h2.underline::after {
+  width: 100%;
+}
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 90px;
+  margin: 2em 2em 2em 2em;
+}
+.service-item {
+  border: 1px solid #1974d3;
+  border-radius: 1em;
+  padding: 2em;
+  text-align: center;
+}
+.service-item .service-icon {
+  color: #083463;
+  font-size: 3em;
+}
+.service-item h4 {
+  padding: 1em 0em 1em 0em;
+  color: #083463;
+}
+
+/* media-query starts here */
+@media screen and (max-width: 768px) {
+  .service-container {
+    padding-left: 1em;
+  }
+  .service-content {
+    display: block;
+  }
+  .service-item {
+    margin-bottom: 1.5em;
+  }
+}

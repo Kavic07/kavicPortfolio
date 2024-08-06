@@ -7,6 +7,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
+import axios from "axios";
 
 const Contact = () => {
   const [isInView, setIsInView] = useState(false);
@@ -32,33 +33,40 @@ const Contact = () => {
     };
   }, []);
 
-  const sendEmail = async (e) => {
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   message: "",
+  // });
+
+  const initialFormData = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const formData = {
-      firstName: e.target.firstName.value,
-      lastName: e.target.lastName.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
-
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-      } else {
-        alert("Failed to send message. Please try again.");
-      }
+      // eslint-disable-next-line no-undef
+      const response = await axios.post(
+        "http://localhost:5000/api/send-email",
+        formData
+      );
+      alert(response.data.message);
+      setFormData(initialFormData); //clear the form after successful submission
     } catch (error) {
       console.error("Error sending email:", error);
-      alert("Failed to send message. Please try again.");
+      alert("Failed to send email. Please try again.");
     }
   };
 
@@ -69,7 +77,7 @@ const Contact = () => {
           Contact Me
         </h2>
         <div className="contact-wrapper">
-          <form onSubmit={sendEmail}>
+          <form method="POST" onSubmit={handleSubmit}>
             <div className="form-name">
               <div className="form-group">
                 <label htmlFor="firstname">First Name</label>
@@ -79,6 +87,7 @@ const Contact = () => {
                   className="form-f"
                   id="firstName"
                   name="firstName"
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -91,6 +100,7 @@ const Contact = () => {
                   className="form-f"
                   id="lastName"
                   name="lastName"
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -104,6 +114,7 @@ const Contact = () => {
                 className="form-control"
                 id="email"
                 name="email"
+                onChange={handleChange}
                 required
               />
             </div>
@@ -115,6 +126,7 @@ const Contact = () => {
                 className="form-control"
                 id="message"
                 name="message"
+                onChange={handleChange}
                 rows="7"
                 required
               ></textarea>

@@ -6,9 +6,9 @@ import {
   faLinkedinIn,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
-import "./Header.css";
+import "./Home.css";
 
-const Header = () => {
+const Home = () => {
   return (
     <>
       <div className="header-container">
@@ -48,4 +48,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Home;

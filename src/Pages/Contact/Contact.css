@@ -2,7 +2,7 @@
   margin-left: 25%;
   font-family: Heebo;
   background-color: #c0dbf7;
-  padding: 3em 2em 3em 2em;
+  padding: 3em 2em 7.6em 2em;
 }
 /* h2 styling starts here */
 .contact-container h2 {
@@ -118,6 +118,7 @@ button:hover {
 @media screen and (max-width: 1024px) {
   .contact-container {
     margin-left: 17%;
+    padding-bottom: 8.8em;
   }
   .contact-wrapper {
     display: block;

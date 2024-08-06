@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -19,23 +20,23 @@ const Navbar = () => {
         <ul>
           <li>
             <FontAwesomeIcon icon={faHouse} className="navbar-icons" />
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faUser} className="navbar-icons" />
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faFolderOpen} className="navbar-icons" />
-            <a href="/projects">Projects</a>
+            <Link to="/project">Projects</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faLayerGroup} className="navbar-icons" />
-            <a href="/services">Services</a>
+            <Link to="/services">Services</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faPhone} className="navbar-icons" />
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

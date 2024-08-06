@@ -87,3 +87,13 @@ h2.underline::after {
     padding-left: 1em;
   }
 }
+
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+  .project-container {
+    padding-bottom: 12.5em;
+  }
+  .project-content {
+    padding-top: 7em;
+  }
+}

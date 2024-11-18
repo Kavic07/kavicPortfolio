@@ -1,12 +1,7 @@
 .header-container {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url("./images/headerpic.jpg");
+  background-image: url("./images/image.png");
   background-size: cover;
-  height: 39em;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +24,7 @@
 @keyframes shakeColorMove {
   0%,
   100% {
-    color: #333;
+    color: red;
   }
   50% {
     color: #1974d3;

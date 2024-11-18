@@ -38,23 +38,23 @@ const Project = () => {
             through innovative frontend development
           </p>
           <div className="project-images">
-            <a href="https://blezynart.netlify.app/">
-              <img src="./images/blezynartt.png" alt="art-website" />
+            <a href="https://blezynart.netlify.app/" target="_blank">
+              <img src="./images/blezynart.png" alt="art-website" />
             </a>
-            <a href="https://kavicblog.netlify.app/">
-              <img src="./images/blogg.png" alt="blog" />
+            <a href="https://sabi-evote.vercel.app/" target="_blank">
+              <img src="./images/evote.png" alt="blog" />
             </a>
-            <a href="https://blezynart.netlify.app/">
-              <img src="./images/blezynartt.png" alt="art-website" />
+            <a href="https://kavicblog.netlify.app/" target="_blank">
+              <img src="./images/blog.png" alt="blog" />
             </a>
-            <a href="https://kavicblog.netlify.app/">
-              <img src="./images/blogg.png" alt="blog" />
+            <a href="https://blezynart.netlify.app/" target="_blank">
+              <img src="./images/blezynart.png" alt="art-website" />
             </a>
-            <a href="https://blezynart.netlify.app/">
-              <img src="./images/blezynartt.png" alt="art-website" />
+            <a href="https://blezynart.netlify.app/" target="_blank">
+              <img src="./images/blezynart.png" alt="art-website" />
             </a>
-            <a href="https://kavicblog.netlify.app/">
-              <img src="./images/blogg.png" alt="blog" />
+            <a href="https://kavicblog.netlify.app/" target="_blank">
+              <img src="./images/blog.png" alt="blog" />
             </a>
           </div>
         </div>

@@ -57,12 +57,13 @@ h2.underline::after {
 .project-images {
   background-color: #083463;
   border-radius: 2em;
-  height: 450px;
+  height: 485px;
   display: flex;
   overflow-x: auto;
   width: 100%;
   padding: 1em 0;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 .project-images a {
   flex: 0 0 auto;
@@ -70,8 +71,8 @@ h2.underline::after {
   margin-left: 1em;
 }
 .project-images img {
-  width: 290px;
-  height: 400px;
+  width: 270px;
+  height: 450px;
   border-radius: 1em;
   max-width: 100%;
 }

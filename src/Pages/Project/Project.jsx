@@ -42,13 +42,13 @@ const Project = () => {
               <img src="./images/blezynart.png" alt="art-website" />
             </a>
             <a href="https://sabi-evote.vercel.app/" target="_blank">
-              <img src="./images/evote.png" alt="blog" />
+              <img src="./images/evote.png" alt="evote" />
+            </a>
+            <a href="https://vuecakes.netlify.app/" target="_blank">
+              <img src="./images/vuecakes.png" alt="vuecakes" />
             </a>
             <a href="https://kavicblog.netlify.app/" target="_blank">
               <img src="./images/blog.png" alt="blog" />
-            </a>
-            <a href="https://blezynart.netlify.app/" target="_blank">
-              <img src="./images/blezynart.png" alt="art-website" />
             </a>
             <a href="https://blezynart.netlify.app/" target="_blank">
               <img src="./images/blezynart.png" alt="art-website" />

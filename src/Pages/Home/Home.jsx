@@ -8,43 +8,47 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./Home.css";
 
+const developerText = "Frontend Developer";
+
 const Home = () => {
   return (
-    <>
-      <div className="header-container">
-        <h2>
-          I&nbsp;am&nbsp;Famuti&nbsp;Blessing<br></br>
-          <span>A</span>&nbsp;<span>F</span>
-          <span>r</span>
-          <span>o</span>
-          <span>n</span>
-          <span>t</span>
-          <span>-</span>
-          <span>e</span>
-          <span>n</span>
-          <span>d</span>&nbsp;<span>D</span>
-          <span>e</span>
-          <span>v</span>
-          <span>e</span>
-          <span>l</span>
-          <span>o</span>
-          <span>p</span>
-          <span>e</span>
-          <span>r</span>
-        </h2>
-        <div className="header-icons">
-          <a href="https://github.com/Kavic07">
-            <FontAwesomeIcon icon={faGithub} className="media-icon" />
-          </a>
-          <a href="linkedin.com/in/blessing-famuti-ayodele-93a995245">
-            <FontAwesomeIcon icon={faLinkedinIn} className="media-icon" />
-          </a>
-          <a href="https://medium.com/@kavic07">
-            <FontAwesomeIcon icon={faMedium} className="media-icon" />
-          </a>
-        </div>
+    <div className="header-container">
+      <h2>
+        I&nbsp;am&nbsp;Famuti&nbsp;Blessing<br></br>
+        {developerText.split("").map((char, index) => (
+          <span
+            key={index}
+            className="letter"
+            style={{ animationDelay: `${index * 0.05}s` }}
+          >
+            {char === " " ? "\u00A0" : char}
+          </span>
+        ))}
+      </h2>
+      <div className="header-icons">
+        <a
+          href="https://github.com/Kavic07"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} className="media-icon" />
+        </a>
+        <a
+          href="linkedin.com/in/blessing-famuti-ayodele-93a995245"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} className="media-icon" />
+        </a>
+        <a
+          href="https://medium.com/@kavic07"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faMedium} className="media-icon" />
+        </a>
       </div>
-    </>
+    </div>
   );
 };
 

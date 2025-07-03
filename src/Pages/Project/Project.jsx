@@ -11,7 +11,7 @@ const projects = [
   {
     name: "Blezyn Art",
     image: blezynart,
-    url: "https://blezynart.netlify.app/",
+    url: "https://blezyn-art.vercel.app/",
   },
   {
     name: "E-vote",
